@@ -3,3 +3,28 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(#14ed14,#07ff12 50%,#0eec19 60%,#036a03);
+}
+
+header, footer {
+    height: 100px;
+    background-color: #036a03;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #14ed14;
+}
