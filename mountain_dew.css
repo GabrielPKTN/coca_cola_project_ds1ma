@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -6,19 +8,19 @@
 body {
     width: 100vw;
     height: 100vh;
-    display: flex;
+    display: grid;
     flex-direction: column;
     background:linear-gradient(#14ed14,#07ff12 50%,#0eec19 60%,#036a03);
 }
 
 header, footer {
     height: 100px;
-    background-color: #036a03;
     color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 header {
@@ -44,7 +46,19 @@ main {
 
 .background-logo {
     position: absolute;
-    width: 100%;
+    width: 80%;
+    max-height: 80%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.detail {
+    position: absolute;
+    max-width: 100%;
     max-height: 100%;
     margin: auto;
     top: 0;
@@ -56,11 +70,13 @@ main {
 
 .content-text {
     position: absolute;
-    color:  rgb(19, 213, 19);
+    color:  #0eec19;
     font-size: 2.5rem;
     width: 240px;
     transform: translateX(-100%);
     text-align: end;
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 3%;
 }
 
 .destaque {
@@ -69,6 +85,8 @@ main {
 
 .content-image {
     height: 85vh;
+    filter: drop-shadow(5px 5px 5px black);
+
 }
 
 footer {
@@ -80,6 +98,7 @@ footer {
     padding-left: 75px;
     color: #FFFFFF;
     font-weight: 100;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 footer div {
